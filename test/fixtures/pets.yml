@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  happiness: MyString
+  weight: MyString
+  age: MyString
+
+two:
+  name: MyString
+  happiness: MyString
+  weight: MyString
+  age: MyString
