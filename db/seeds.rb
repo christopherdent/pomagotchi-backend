@@ -7,4 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.create(name: "Chris", email: "christopherdent01@gmail.com")
 User.create(name: "Guest", email: "guest@guest.com")
-Pet.create(name: "Calvin", happiness: 10, weight: 10, age: 1, user_id: 1)
+Pet.create(name: "Calvin", happiness: 10, weight: 10, age: 1, picture_url: "file:///C:/Users/chris/code/pom-main/pomagotchi/public/assets/pom.jpg", user_id: 1)
+Pet.create(name: "Guest Pet", happiness: 10, weight: 10, age: 1, picture_url: "file:///C:/Users/chris/code/pom-main/pomagotchi/public/assets/pom.jpg", user_id: 2)

@@ -5,6 +5,7 @@ class CreatePets < ActiveRecord::Migration[6.0]
       t.string :happiness
       t.string :weight
       t.string :age
+      t.string :picture_url
 
       t.timestamps
     end
