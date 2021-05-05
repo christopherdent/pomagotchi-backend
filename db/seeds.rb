@@ -4,7 +4,12 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.destroy_all
+Pet.destroy_all 
+
 User.create(name: "Chris", email: "christopherdent01@gmail.com")
 User.create(name: "Guest", email: "guest@guest.com")
 Pet.create(name: "Calvin", happiness: 10, weight: 10, age: 1, picture_url: "file:///C:/Users/chris/code/pom-main/pomagotchi/public/assets/pom.jpg", user_id: 1)
