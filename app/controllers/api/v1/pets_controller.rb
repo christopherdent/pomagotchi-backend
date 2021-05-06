@@ -15,6 +15,12 @@ class Api::V1::PetsController < ApplicationController
        end 
     end 
 
+
+    def show 
+        pet = Pet.find(params[:id])
+        render json: pet 
+    end 
+
 private
 
     def pet_params 
