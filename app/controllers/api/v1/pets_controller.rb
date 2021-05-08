@@ -1,3 +1,5 @@
+
+
 class Api::V1::PetsController < ApplicationController
 
     def index 
@@ -21,10 +23,21 @@ class Api::V1::PetsController < ApplicationController
         render json: pet 
     end 
 
+
+    def update 
+        pet = Pet.find(params[:id])
+          
+        if pet.update(pet_params) 
+            render json: pet 
+        else 
+            render json: {errors: pets.errors.full_messages}, status: :unprocessible_entity
+        end 
+    end 
+
 private
 
     def pet_params 
-        params.require(:pets).permit(:name, :weight, :age, :picture_url, :user_id)  #requiring the top level hash and permitting the following attributes.  in fetch request you will have to remember they're nested.  
+        params.require(:pet).permit(:name, :weight, :age, :picture_url, :user_id, :id, :happiness)  #requiring the top level hash and permitting the following attributes.  in fetch request you will have to remember they're nested.  
         
     end 
 
