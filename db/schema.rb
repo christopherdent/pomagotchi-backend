@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_04_17_042504) do
     t.string "name"
     t.string "happiness"
     t.string "weight"
-    t.string "age"
+    t.integer "age"
     t.string "picture_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
